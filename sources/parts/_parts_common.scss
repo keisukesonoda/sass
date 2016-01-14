@@ -3,6 +3,21 @@
 ------------------------- */
 
 
+/* wrap content
+-------------------- */
+.wrapper {
+	min-width: $container;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.container {
+	width: $container;
+	margin: 0 auto;
+}
+
+
 /* texts
 -------------------- */
 .tdu {

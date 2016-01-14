@@ -1,20 +1,15 @@
 /* -------------------------------------
 	PC general settinngs
 ------------------------------------- */
-.sp {
-	display: none !important;
-}
 
-// container width
+
+// ----------------------
+//	variables
 // ----------------------
 $container: 960px;
 
-// base font size
-// ----------------------
 $font-size-base: 14px;
 
-// font-size minus
-// ----------------------
 $font-size-m1: $font-size-base - 1px;
 $font-size-m2: $font-size-base - 2px;
 $font-size-m3: $font-size-base - 3px;
@@ -25,8 +20,7 @@ $font-size-m7: $font-size-base - 7px;
 $font-size-m8: $font-size-base - 8px;
 $font-size-m9: $font-size-base - 9px;
 $font-size-m10: $font-size-base - 10px;
-// font-size plus
-// ----------------------
+
 $font-size-p1: $font-size-base + 1px;
 $font-size-p2: $font-size-base + 2px;
 $font-size-p3: $font-size-base + 3px;
@@ -38,9 +32,26 @@ $font-size-p8: $font-size-base + 8px;
 $font-size-p9: $font-size-base + 9px;
 $font-size-p10: $font-size-base + 10px;
 
+// Spaces
+$space-base: 5px;
+$space-2: $space-base * 2;
+$space-3: $space-base * 3;
+$space-4: $space-base * 4;
+$space-5: $space-base * 5;
+$space-6: $space-base * 6;
+$space-7: $space-base * 7;
+$space-8: $space-base * 8;
+$space-9: $space-base * 9;
+$space-10: $space-base * 10;
 
-// Font Size
+
 // ----------------------
+//	PC original styles
+// ----------------------
+.sp {
+	display: none !important;
+}
+
 .fsm1 { font-size: $font-size-m1; }
 .fsm2 { font-size: $font-size-m2; }
 .fsm3 { font-size: $font-size-m3; }
@@ -63,34 +74,14 @@ $font-size-p10: $font-size-base + 10px;
 .fsp9 { font-size: $font-size-p9; }
 .fsp10 { font-size: $font-size-p10; }
 
-// width
 .full	 { width: 100%; }
 .half	 { width: 50%; }
 .third	{ width: 33.3%; }
 .quater { width: 25%; }
 .fifth	{ width: 20%; }
 
-// float
 .fl { float: left; }
 .fr { float: right; }
-
-
-
-
-//	Spacing Classes
-//-------------------------------------
-// Spaces
-$space-base: 5px;
-$space-2: $space-base * 2;
-$space-3: $space-base * 3;
-$space-4: $space-base * 4;
-$space-5: $space-base * 5;
-$space-6: $space-base * 6;
-$space-7: $space-base * 7;
-$space-8: $space-base * 8;
-$space-9: $space-base * 9;
-$space-10: $space-base * 10;
-
 
 .mgn { margin: 0 !important; }
 .mga { margin: auto !important; }
@@ -189,10 +180,6 @@ $space-10: $space-base * 10;
 .pr9 { padding-right: $space-9 !important; }
 .pr10 { padding-right: $space-10 !important; }
 
-
-/* ----------------
-	text image
----------------- */
 .ti {
 	display: block;
 	background-repeat: no-repeat;

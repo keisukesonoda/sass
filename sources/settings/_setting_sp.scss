@@ -1,26 +1,15 @@
 /* -------------------------------------
 	SP general settinngs
 ------------------------------------- */
-.pc {
-	display: none !important;
-}
 
-body {
-	// paddingやborderをwidthに含めない
-	box-sizing: border-box;
-}
 
-// container width
+// ----------------------
+//	variables
 // ----------------------
 $container: 100%;
 
-// base font size
-// ----------------------
 $font-size-base: 1.2rem;
 
-
-// font-size minus
-// ----------------------
 $font-size-m1: $font-size-base - 0.1rem;
 $font-size-m2: $font-size-base - 0.2rem;
 $font-size-m3: $font-size-base - 0.3rem;
@@ -31,8 +20,7 @@ $font-size-m7: $font-size-base - 0.7rem;
 $font-size-m8: $font-size-base - 0.8rem;
 $font-size-m9: $font-size-base - 0.9rem;
 $font-size-m10: $font-size-base - 1rem;
-// font-size plus
-// ----------------------
+
 $font-size-p1: $font-size-base + 0.1rem;
 $font-size-p2: $font-size-base + 0.2rem;
 $font-size-p3: $font-size-base + 0.3rem;
@@ -44,9 +32,24 @@ $font-size-p8: $font-size-base + 0.8rem;
 $font-size-p9: $font-size-base + 0.9rem;
 $font-size-p10: $font-size-base + 1rem;
 
+$space-base: 1%;
+$space-2: $space-base * 2;
+$space-3: $space-base * 3;
+$space-4: $space-base * 4;
+$space-5: $space-base * 5;
+$space-6: $space-base * 6;
+$space-7: $space-base * 7;
+$space-8: $space-base * 8;
+$space-9: $space-base * 9;
+$space-10: $space-base * 10;
 
-// Font Size class
 // ----------------------
+//	SP original styles
+// ----------------------
+.pc {
+	display: none !important;
+}
+
 .fsm1 { font-size: $font-size-m1; }
 .fsm2 { font-size: $font-size-m2; }
 .fsm3 { font-size: $font-size-m3; }
@@ -68,23 +71,6 @@ $font-size-p10: $font-size-base + 1rem;
 .fsp8 { font-size: $font-size-p8; }
 .fsp9 { font-size: $font-size-p9; }
 .fsp10 { font-size: $font-size-p10; }
-
-
-
-//	Spacing Classes
-//-------------------------------------
-// Spaces
-$space-base: 1%;
-$space-2: $space-base * 2;
-$space-3: $space-base * 3;
-$space-4: $space-base * 4;
-$space-5: $space-base * 5;
-$space-6: $space-base * 6;
-$space-7: $space-base * 7;
-$space-8: $space-base * 8;
-$space-9: $space-base * 9;
-$space-10: $space-base * 10;
-
 
 .mgn { margin: 0 !important; }
 .mga { margin: auto !important; }
@@ -182,11 +168,6 @@ $space-10: $space-base * 10;
 .pr8 { padding-right: $space-8 !important; }
 .pr9 { padding-right: $space-9 !important; }
 .pr10 { padding-right: $space-10 !important; }
-
-
-
-
-
 
 /* ----------------
 	text image

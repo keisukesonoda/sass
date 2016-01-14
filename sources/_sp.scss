@@ -2,7 +2,7 @@
 // import files
 //-------------------------------------
 // @import "wp/wp_theme_sp";
-// @import "wp/wp_native";
+@import "wp/wp_native";
 @import "mixin";
 @import "settings/reset";
 @import "settings/general";
@@ -29,6 +29,114 @@
 	width: 86%;
 	margin: 0 auto;
 }
+
+.editor {
+	width: 94%;
+	margin: 0 auto;
+}
+
+
+
+/* titles
+-------------------- */
+
+
+
+
+/* backgrounds
+-------------------- */
+
+
+
+
+
+
+
+/* --------------------
+	common sections
+-------------------- */
+
+.contents {
+	min-height: 500px;
+}
+
+
+
+
+
+
+
+
+/* header
+-------------------- */
+.header {
+	color: white;
+	background-color: black;
+	padding: 2em 0;
+}
+
+
+/* footer
+-------------------- */
+.footer {
+	color: white;
+	background-color: black;
+	padding: 2em 0;
+}
+
+
+/* --------------------
+	navigations
+-------------------- */
+
+
+
+
+
+
+
+
+/*-------------------------------------
+	Characteristic
+-------------------------------------*/
+.home {
+}
+
+
+
+/* --------------------
+	lower commons
+-------------------- */
+.lower {
+	.contents {
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

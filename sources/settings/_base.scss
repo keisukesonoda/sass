@@ -1,66 +1,57 @@
 /*-------------------------------------
  Base Settings
 -------------------------------------*/
-// 980px以上
+
+/* font size setting
+-------------------- */
+// 768px以上
 html {
-	// font-size: 62.5%; // 1.2rem ->
-	font-size: 0.195%*640;
+	font-size: $font-size-base;
 }
-// // 800px 〜 979px
-// @media screen and(max-width: 979px) {
-//	html {
-//		font-size: 0.195%*979; // 1.2rem -> 37px
-//	}
-// }
-// // 737px 〜 799px
-// @media screen and(max-width: 799px) {
-//	html {
-//		font-size: 0.195%*799; // 1.2rem -> 30.4px
-//	}
-// }
-// // 668px 〜 736px（iphone6 plusヨコ相当）
-// @media screen and(max-width: 736px) {
-//	html {
-//		font-size: 0.195%*673; // 1.2rem -> 28px
-//	}
-// }
+// 1pxあたりは0.195%
+// 668px 〜 769px（iphone6 plusヨコ相当）
+@media screen and(max-width: 769px) {
+	html {
+		font-size: 0.195%*736;
+	}
+}
 // 569px 〜 667px（iphone6ヨコ相当）
 @media screen and(max-width: 667px) {
 	html {
-		font-size: 0.195%*667; // 1.2rem -> 25.3px
+		font-size: 0.195%*667;
 	}
 }
 // 415px 〜 568px（iphone5ヨコ相当）
 @media screen and(max-width: 568px) {
 	html {
-		font-size: 0.195%*568; // 1.2rem -> 21.6px
+		font-size: 0.195%*568;
 	}
 }
 // 376px 〜 414px（iphone6 plusタテ相当）
 @media screen and(max-width: 414px) {
 	html {
-		font-size: 0.195%*414; // 1.2rem -> 17.3px
+		font-size: 0.195%*414;
 	}
 }
 // 321px 〜 375px（iphone6タテ相当）
 @media screen and(max-width: 375px) {
 	html {
-		font-size: 0.195%*375; // 1.2rem -> 14.25px
+		font-size: 0.195%*375;
 	}
 }
 // 〜 320px（iphone5タテ相当）
 @media screen and(max-width: 320px) {
 	html {
-		font-size: 62.5%; // 1.2rem -> 12px
-		// 1px あたり 0.195%
+		font-size: 62.5%;
 	}
 }
+
+
 body {
-	color: $color-a;
 	font-size: $font-size-base;
 	font-family: $gothicFont;
-	// line-height: 1.5;
-	min-width: $container;
+	color: $color-a;
+	box-sizing: border-box;
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing:antialiased;
 }
@@ -120,21 +111,5 @@ h5 {
 }
 h6 {
 	font-size: 100%;
-}
-
-
-/* --------------------
-	base content
--------------------- */
-.wrapper {
-	min-width: $container;
-	width: 100%;
-	position: relative;
-	overflow: hidden;
-}
-
-.container {
-	width: $container;
-	margin: 0 auto;
 }
 

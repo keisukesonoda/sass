@@ -2,9 +2,9 @@
 // import files
 //-------------------------------------
 @import "wp/wp_theme_pc";
-@import "wp/wp_native";
 @import "mixin";
 @import "settings/reset";
+@import "wp/wp_native";
 @import "settings/general";
 @import "settings/setting_pc";
 @import "settings/base";
@@ -20,7 +20,8 @@
 /*-------------------------------------
 	General Purpose
 -------------------------------------*/
-
+.editor {
+}
 
 /* titles
 -------------------- */
@@ -75,10 +76,6 @@
 -------------------- */
 
 
-/* bnav
--------------------- */
-.bnav {
-}
 
 
 
