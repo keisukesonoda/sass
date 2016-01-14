@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+@import "sources/wp/wp_wysiwyg";
+@import "sources/settings/general";
+
+
+/* フォントファミリー */
+body {
+  font-family: $gothicFont;
+}

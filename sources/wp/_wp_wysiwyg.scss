@@ -1,0 +1,381 @@
+// ------------------------------
+// WordPress wysiwyg Styles
+// ------------------------------
+
+// ボールド
+b, strong {
+  font-weight: 700;
+}
+
+
+// イタリック
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+
+// 打ち消し
+del {
+  opacity: 0.8;
+}
+
+
+// ul・ol共通
+ul, ol {
+  margin: 0 0 1.6em 1.3333em;
+}
+ @media screen and (min-width: 38.75em) {
+  ul, ol {
+    margin-left: 0; 
+  }
+}
+
+
+// ul
+ul {
+  list-style: disc;
+}
+
+
+// ol
+ol {
+  list-style: decimal;
+}
+
+
+
+// 引用
+blockquote {
+  border-left: 4px solid #707070;
+  border-left: 4px solid rgba(51, 51, 51, 0.7);
+  color: #707070;
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-style: italic;
+  line-height: 1.6667;
+  margin-bottom: 1.6667em;
+  padding-left: 0.7778em;
+}
+blockquote, q {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  quotes: none;
+}
+@media screen and (min-width: 59.6875em) {
+  blockquote {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.6667;
+    margin-bottom: 1.6667em;
+    margin-left: -1.3333em;
+    padding-left: 1.1111em;
+  }
+}
+@media screen and (min-width: 55em) {
+  blockquote {
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 1.8182;
+    margin-bottom: 1.8182em;
+    margin-left: -1.0909em;
+    padding-left: 0.9091em;
+  }
+}
+@media screen and (min-width: 46.25em) {
+  blockquote {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.75;
+    margin-bottom: 1.75em;
+    margin-left: -1.05em;
+    padding-left: 0.85em;
+  }
+}
+@media screen and (min-width: 38.75em) {
+  blockquote {
+    margin-left: -1em;
+  }
+}
+
+
+
+// 横線
+hr {
+  background-color: #eaeaea;
+  background-color: rgba(51, 51, 51, 0.1);
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.6em;
+}
+
+
+
+// 見出し
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-weight: 700;
+}
+
+// h1
+h1 {
+  font-size: 26px;
+  font-size: 2.6rem;
+  line-height: 1.1538;
+  margin-top: 1.8462em;
+  margin-bottom: 0.9231em;
+}
+@media screen and (min-width: 59.6875em) {
+  h1 {
+    font-size: 31px;
+    font-size: 3.1rem;
+    line-height: 1.1613;
+    margin-top: 1.5484em;
+    margin-bottom: 0.7742em;
+  }
+}
+@media screen and (min-width: 55em) {
+  h1 {
+    font-size: 39px;
+    font-size: 3.9rem;
+    line-height: 1.2308;
+    margin-top: 1.641em;
+    margin-bottom: 0.8205em;
+  }
+}
+@media screen and (min-width: 46.25em) {
+  h1 {
+    font-size: 35px;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-top: 1.6em;
+    margin-bottom: 0.8em;
+  }
+}
+
+
+// h2
+h2 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 1.3636;
+  margin-top: 2.1818em;
+  margin-bottom: 1.0909em;
+}
+@media screen and (min-width: 59.6875em) {
+  h2 {
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 1.3846;
+    margin-top: 1.8462em;
+    margin-bottom: 0.9231em;
+  }
+}
+@media screen and (min-width: 55em) {
+  h2 {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 1.25;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+}
+@media screen and (min-width: 46.25em) {
+  h2 {
+    font-size: 29px;
+    font-size: 2.9rem;
+    line-height: 1.2069;
+    margin-top: 1.931em;
+    margin-bottom: 0.9655em;
+  }
+}
+
+
+// h3
+h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.3333;
+  margin-top: 2.6667em;
+  margin-bottom: 1.3333em;
+}
+@media screen and (min-width: 59.6875em) {
+  h3 {
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 1.3636;
+    margin-top: 2.1818em;
+    margin-bottom: 1.0909em;
+  }
+}
+@media screen and (min-width: 55em) {
+  h3 {
+    font-size: 27px;
+    font-size: 2.7rem;
+    line-height: 1.1852;
+    margin-top: 2.3704em;
+    margin-bottom: 1.1852em;
+  }
+}
+@media screen and (min-width: 46.25em) {
+  h3 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 1.1667;
+    margin-top: 2.3333em;
+    margin-bottom: 1.1667em;
+  }
+}
+
+
+
+// h4.5.6
+h4, h5, h6 {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-top: 3.2em;
+    margin-bottom: 1.6em;
+}
+
+// h4
+@media screen and (min-width: 59.6875em) {
+  h4 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 1.3333;
+    margin-top: 2.6667em;
+    margin-bottom: 1.3333em;
+  }
+}
+@media screen and (min-width: 55em) {
+  h4 {
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 1.4545;
+    margin-top: 2.9091em;
+    margin-bottom: 1.4545em;
+  }
+}
+@media screen and (min-width: 46.25em) {
+  h4 {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-top: 2.8em;
+    margin-bottom: 1.4em;
+  }
+}
+
+
+// h5.6
+h5, h6 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 59.6875em) {
+  h5, h6 {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-top: 3.2em;
+    margin-bottom: 1.6em;
+  }
+}
+@media screen and (min-width: 55em) {
+  h5, h6 {
+    font-size: 19px;
+    font-size: 1.9rem;
+    line-height: 1.2632;
+    margin-top: 3.3684em;
+    margin-bottom: 1.6842em;
+  }
+}
+@media screen and (min-width: 46.25em) {
+  h5, h6 {
+    font-size: 17px;
+    font-size: 1.7rem;
+    line-height: 1.2353;
+    margin-top: 3.2941em;
+    margin-bottom: 1.6471em;
+  }
+}
+
+
+
+
+// 整形済みテキスト
+pre {
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.01);
+  border: 1px solid #eaeaea;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  line-height: 1.2;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 0.8em;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+code, kbd, tt, var, samp, pre {
+  font-family: Inconsolata, monospace;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media screen and (min-width: 59.6875em) {
+  pre {
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 55em) {
+  pre {
+    line-height: 1.2632;
+  }
+}
+
+@media screen and (min-width: 46.25em) {
+  pre {
+    line-height: 1.2353;
+  }
+}
+
+
+
+
+// 両端揃え
+p {
+  margin-bottom: 1.6em;
+}
+
+
+
+
+
+
+
+// 共通メディアクエリ
+@media screen and (min-width: 59.6875em) {
+  p, address, pre, hr, ul, ol, dl, dd, table {
+      margin-bottom: 1.6em;
+  }
+}
+@media screen and (min-width: 55em) {
+  p, address, pre, hr, ul, ol, dl, dd, table {
+      margin-bottom: 1.6842em;
+  }
+}
+@media screen and (min-width: 46.25em) {
+  p, address, pre, hr, ul, ol, dl, dd, table {
+      margin-bottom: 1.6471em;
+  }
+}
+
