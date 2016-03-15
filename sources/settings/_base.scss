@@ -4,58 +4,43 @@
 
 /* font size setting
 -------------------- */
-// 768px以上
+// 770px以上
 html {
 	font-size: $font-size-base;
 }
+
 // 1pxあたりは0.195%
-// 668px 〜 769px（iphone6 plusヨコ相当）
-@media screen and(max-width: 769px) {
-	html {
-		font-size: 0.195%*736;
-	}
-}
-// 569px 〜 667px（iphone6ヨコ相当）
-@media screen and(max-width: 667px) {
-	html {
-		font-size: 0.195%*667;
-	}
-}
-// 415px 〜 568px（iphone5ヨコ相当）
-@media screen and(max-width: 568px) {
-	html {
-		font-size: 0.195%*568;
-	}
-}
-// 376px 〜 414px（iphone6 plusタテ相当）
-@media screen and(max-width: 414px) {
-	html {
-		font-size: 0.195%*414;
-	}
-}
-// 321px 〜 375px（iphone6タテ相当）
-@media screen and(max-width: 375px) {
-	html {
-		font-size: 0.195%*375;
-	}
-}
-// 〜 320px（iphone5タテ相当）
-@media screen and(max-width: 320px) {
-	html {
-		font-size: 62.5%;
+// 769: 668px 〜 769px（iphone6 plusヨコ相当）
+// 667: 569px 〜 667px（iphone6ヨコ相当）
+// 568: 415px 〜 568px（iphone5ヨコ相当）
+// 414: 376px 〜 414px（iphone6 plusタテ相当）
+// 375: 321px 〜 375px（iphone6タテ相当）
+// 320: 〜 320px（iphone5タテ相当）
+$pixels: (
+	769: 769px,
+	667: 667px,
+	568: 568px,
+	414: 414px,
+	375: 375px,
+	320: 320px
+);
+
+@each $key, $pixel in $pixels {
+	@media screen and(max-width: #{$pixel}) {
+		html {
+			font-size: 0.195% * $key;
+		}
 	}
 }
 
 
 body {
 	font-size: $font-size-base;
-	font-family: $gothicFont;
+	font-family: $kozGothic;
 	color: $color-a;
-	box-sizing: border-box;
 	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing:antialiased;
+	// -webkit-font-smoothing:antialiased;
 }
-
 
 /* --------------------
 	tags
@@ -86,30 +71,12 @@ iframe, object, video, embed {
 table {
 	width: 100%;
 }
-
-/* --------------------
-	titles
--------------------- */
-h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
+* {
+	outline: none;
 }
-
-h1 {
-	font-size: 200%;
+input, textarea {
+	border: none;
 }
-h2 {
-	font-size: 180%;
+button.ti {
+	text-indent: 160%;
 }
-h3 {
-	font-size: 160%;
-}
-h4 {
-	font-size: 140%;
-}
-h5 {
-	font-size: 120%;
-}
-h6 {
-	font-size: 100%;
-}
-
