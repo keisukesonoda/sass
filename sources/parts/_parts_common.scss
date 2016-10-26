@@ -24,6 +24,9 @@
 	text-decoration: underline;
 }
 
+.tdn {
+	text-decoration: none !important;
+}
 
 
 /* links
@@ -44,30 +47,52 @@
 }
 
 
+$colors: (
+	a: $color-a,
+	b: $color-b,
+	c: $color-c,
+	d: $color-d,
+);
+
+@each $hoge, $color in $colors {
+	.lc#{$hoge} {
+		color: $color;
+		text-decoration: underline;
+		&:link {color: $color;}
+		&:visited {color: $color;}
+		&:hover {color: $color + 30;}
+		&:active {color: $color;}
+	}
+}
+
+
+
+
+
 /* arrows
 -------------------- */
 .arr {
-	position: relative;
-	&:after {
-		content: "";
-		// background-image: url(../images/arrows.png);
-		@extend .pos-vertical-center;
-	}
-// direction
-	$downSize: 7px;
-	&.down {
-		padding-right: $downSize*1.5;
-		&:after {
-			@include wh($downSize, 4px);
-			right: 0;
-		}
-	}
-// color
-	&.blk.down {
-		&:after {
-			background-position: left top;
-		}
-	}
+// 	position: relative;
+// 	&:after {
+// 		content: "";
+// 		// background-image: url(../images/arrows.png);
+// 		@extend .pos-vertical-center;
+// 	}
+// // direction
+// 	$downSize: 7px;
+// 	&.down {
+// 		padding-right: $downSize*1.5;
+// 		&:after {
+// 			@include wh($downSize, 4px);
+// 			right: 0;
+// 		}
+// 	}
+// // color
+// 	&.blk.down {
+// 		&:after {
+// 			background-position: left top;
+// 		}
+// 	}
 }
 
 .txt-arr {
@@ -169,3 +194,11 @@
 		vertical-align: middle;
 	}
 }
+
+
+.btn-totop {
+	z-index: 50;
+}
+
+
+

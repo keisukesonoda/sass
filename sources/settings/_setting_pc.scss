@@ -6,7 +6,7 @@
 // ----------------------
 //	variables
 // ----------------------
-$container: 960px;
+$container: 980px;
 
 $font-size-base: 14px;
 
@@ -62,7 +62,7 @@ $space-10: $space-base * 10;
 .fsm8 { font-size: $font-size-m8; }
 .fsm9 { font-size: $font-size-m9; }
 .fsm10 { font-size: $font-size-m10; }
-.fn { font-size: $font-size-base !important; }
+.fn { font-size: $font-size-base; }
 .fsp1 { font-size: $font-size-p1; }
 .fsp2 { font-size: $font-size-p2; }
 .fsp3 { font-size: $font-size-p3; }
@@ -187,4 +187,9 @@ $space-10: $space-base * 10;
 	overflow: hidden;
 	white-space: nowrap;
 	text-indent: 120%;
+}
+
+
+html {
+	font-size: $font-size-base;
 }
