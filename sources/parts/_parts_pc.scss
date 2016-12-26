@@ -13,6 +13,27 @@
   display: flex;
 }
 
+.wrapper {
+  min-width: map-get($container, md);
+}
+
+.container {
+  width: map-get($container, md);
+  margin: 0 auto;
+  &.lg {
+    width: map-get($container, lg);
+  }
+  &.md {
+    width: map-get($container, md);
+  }
+  &.sm {
+    width: map-get($container, sm);
+  }
+  &.xs {
+    width: map-get($container, xs);
+  }
+}
+
 .full-elm {
   $over: 40px;
   width: 640px;
@@ -40,9 +61,11 @@
 
 // hover opacity
 .opac {
-  display: block;
-  &:hover {
-    animation: backToOpac1 1s linear 0s;
+  // display: block;
+  &:not(.disable):hover {
+    opacity: .7;
+    transition: opacity .2s linear 0s;
+    // animation: backToOpac1 1s linear 0s;
   }
 }
 @keyframes backToOpac1 {

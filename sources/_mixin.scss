@@ -4,7 +4,7 @@
 @mixin whi($width, $height, $imageFile) {
   width: $width;
   height: $height;
-  background-image: url(images/#{$imageFile});
+  background-image: url(../img/#{$imageFile});
 }
 
 @mixin wh($width, $height) {
@@ -14,7 +14,7 @@
 
 @mixin spi($pt, $imageFile) {
   padding-top: $pt;
-  background-image: url(images/#{$imageFile});
+  background-image: url(../img/#{$imageFile});
 }
 
 @mixin sp($pt) {
@@ -68,6 +68,16 @@
 @mixin adjustTop($distance) {
   position: relative;
   top: $distance;
+}
+
+@mixin decoration($pb, $color) {
+  padding-bottom: $pb;
+  border-bottom: 1px solid $color;
+}
+
+@mixin getFontSize($psd) {
+  $rate: $fwidth / 320;
+  font-size: ($psd / $rate) / 10+rem;
 }
 
 

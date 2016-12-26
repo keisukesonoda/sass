@@ -1,12 +1,25 @@
 // SP general settinngs
 // -------------------------------------
 
-$container: 100%;
+$full: 100%;
+$half: 50%;
 
-$sp-container: percentage(600/640);
-$inner-container: percentage(560/610);
-$container-pd: ((100%-$sp-container)/2);
-$inner-pd: percentage(20/600);
+$fwidth: 750;
+$lwidth: 700;
+$mwidth: 686;
+$swidth: 580;
+$xwidth: 530;
+
+$container: (
+  lg: percentage($lwidth / $fwidth),
+  md: percentage($mwidth / $fwidth),
+  sm: percentage($swidth / $fwidth),
+  xs: percentage($xwidth / $fwidth),
+);
+
+$sp-container: percentage($mwidth / $fwidth);
+$container-pd: ((100% - $sp-container) / 2);
+$inner-pd: percentage(20 / 600);
 
 $font-size-base: 1.2rem;
 

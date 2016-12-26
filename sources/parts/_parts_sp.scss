@@ -55,20 +55,32 @@ $pixels: (
 }
 
 // container sizes
+// .container {
+//   width: 100%;
+//   max-width: 100%;
+//   min-width: 0;
+// }
+
+// .sp-container {
+//   width: $sp-container;
+//   margin: 0 auto;
+// }
+
 .container {
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-}
-
-.sp-container {
-  width: $sp-container;
+  width: map-get($container, md);
   margin: 0 auto;
-}
-
-.inner-container {
-  width: $inner-container;
-  margin: 0 auto;
+  &.lg {
+    width: map-get($container, lg);
+  }
+  &.md {
+    width: map-get($container, md);
+  }
+  &.sm {
+    width: map-get($container, sm);
+  }
+  &.xs {
+    width: map-get($container, xs);
+  }
 }
 
 .full-elm {

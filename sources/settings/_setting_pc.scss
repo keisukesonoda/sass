@@ -1,9 +1,18 @@
 // PC general settinngs
 // -------------------------------------
 
-$container: 980px;
+$container: (
+  lg: 1168px,
+  md: 1090px,
+  sm: 1040px,
+  xs: 980px,
+);
+
 $main: 700px;
 $side: 280px;
+
+
+
 
 $font-size-base: 14px;
 

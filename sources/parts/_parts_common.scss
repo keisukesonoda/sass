@@ -2,20 +2,14 @@
   parts
 ------------------------- */
 
-
 /* wrap content
 -------------------- */
 .wrapper {
-  min-width: $container;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.container {
-  width: $container;
-  margin: 0 auto;
-}
 
 
 /* texts
@@ -112,63 +106,84 @@ $colors: (
 
 /* arrows(triangle)
 -------------------- */
-.triangle {
-  position: relative;
-  display: inline-block;
-  &:before {
-    content: '▶︎';
-    @extend .pos-vertical-center;
-  }
-// direction
-  $rightSize: 5px;
-  &.right {
-    padding-left: $rightSize*4;
-    &:before {
-      @include wh($rightSize, 9px);
-      left: 0;
-    }
-  }
-// colors
-  &.yel.right {
-    &:before {
-      background-position: left top;
-    }
-  }
-  &.gry.right {
-    &:before {
-      background-position: -$rightSize top;
-    }
-  }
-}
+// .triangle {
+//   position: relative;
+//   display: inline-block;
+//   &:before {
+//     content: '▶︎';
+//     @extend .pos-vertical-center;
+//   }
+// // direction
+//   $rightSize: 5px;
+//   &.right {
+//     padding-left: $rightSize*4;
+//     &:before {
+//       @include wh($rightSize, 9px);
+//       left: 0;
+//     }
+//   }
+// // colors
+//   &.yel.right {
+//     &:before {
+//       background-position: left top;
+//     }
+//   }
+//   &.gry.right {
+//     &:before {
+//       background-position: -$rightSize top;
+//     }
+//   }
+// }
 
 
 /* lists
 -------------------- */
-.disc-items {
-  .disc-item {
-    list-style-type: disc;
-    list-style-position: inside;
-    @include indents(.8em);
-    margin-top: 25px;
-    line-height: 2;
-    letter-spacing: 1.5px;
+// .disc-items {
+//   .disc-item {
+//     list-style-type: disc;
+//     list-style-position: inside;
+//     @include indents(.8em);
+//     margin-top: 25px;
+//     line-height: 2;
+//     letter-spacing: 1.5px;
+//   }
+// }
+
+// .notice-items {
+//   .notice-item {
+//     @include indents(1.1em);
+//     &:before {
+//       content: "※";
+//     }
+//   }
+// }
+
+// .ib-items {
+//   display: table;
+//   font-size: 0;
+//   .ib-item {
+//     @extend .fn;
+//     display: inline-block;
+//     vertical-align: top;
+//   }
+// }
+
+
+
+.fl-range {
+  @extend .clearfix;
+  > * {
+    float: left;
   }
 }
 
-.notice-items {
-  .notice-item {
-    @include indents(1.1em);
-    &:before {
-      content: "※";
-    }
-  }
-}
-
-.ib-items {
-  display: table;
+.ib-range {
   font-size: 0;
-  .ib-item {
-    @extend .fn;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  > * {
+    font-size: $font-size-base;
     display: inline-block;
     vertical-align: top;
   }

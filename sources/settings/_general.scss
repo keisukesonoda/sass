@@ -18,9 +18,13 @@ $color-l: #000000; //
 
 
 // easing
-$easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$easeInSine:     cubic-bezier(0.47, 0, 0.745, 0.715);
+$easeOutSine:    cubic-bezier(0.39, 0.575, 0.565, 1);
+$easeInCirc:     cubic-bezier(0.6, 0.04, 0.98, 0.335);
+$easeOutCirc:    cubic-bezier(0.075, 0.82, 0.165, 1) ;
+$easeInOutCirc:  cubic-bezier(0.785, 0.135, 0.15, 0.86);
 $easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
-$easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeOutQuart:   cubic-bezier(0.165, 0.84, 0.44, 1);
 
 
 // Heights
@@ -40,23 +44,8 @@ $radius-3: $radius-base * 4;
 import
 google font
 */
-// @import url(https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy);
-
-// $SortsMillGoudy: 'Sorts Mill Goudy', serif;
-
-// @import url(https://fonts.googleapis.com/css?family=Merriweather);
-
-// $Merriweather: 'Merriweather', serif;
-
-// はんなりフォント
-// @font-face {
-//   font-family: 'hannari';
-//   src: url('../webfonts/hannari2.woff') format('woff'), /* Modern Browsers */
-//        url('../webfonts/hannari2.otf')  format('opentype'); /* Safari, Android, iOS */
-// }
-
-// $hannari: "hannari", "HGS明朝E", "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", serif;
-
+@import url('https://fonts.googleapis.com/css?family=Muli');
+$Muli: 'Muli', sans-serif;
 
 
 /*
@@ -119,5 +108,5 @@ $minchoFont: 'ヒラギノ明朝 Pro W3', "Hiragino Mincho ProN", "Hiragino Minc
 
 $helvetica: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
-
+$basic: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', MyYuGothicM, YuGothic, Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 
