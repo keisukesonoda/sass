@@ -55,17 +55,6 @@ $pixels: (
 }
 
 // container sizes
-// .container {
-//   width: 100%;
-//   max-width: 100%;
-//   min-width: 0;
-// }
-
-// .sp-container {
-//   width: $sp-container;
-//   margin: 0 auto;
-// }
-
 .container {
   width: map-get($container, md);
   margin: 0 auto;
@@ -84,7 +73,15 @@ $pixels: (
 }
 
 .full-elm {
-  $over: 7%;
+  $over: 7.5%;
+  width: 100% + $over;
+  margin-left: -( $over / 2);
+  padding-left: $over / 2;
+  padding-right: $over / 2;
+}
+
+.content-full-elm {
+  $over: 15%;
   width: 100% + $over;
   margin-left: -( $over / 2);
   padding-left: $over / 2;
@@ -103,7 +100,8 @@ $pixels: (
     width: 100%;
     font-size: 0;
     > * {
-      font-size: 1.2rem;
+      // font-size: 1.2rem;
+      @include getFontSize(24);
       display: inline-block;
       vertical-align: top;
     }

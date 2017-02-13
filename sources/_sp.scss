@@ -16,21 +16,58 @@
 // @import "wp/wp_parts_sp";
 // @import "wp/wp_cf7_sp";
 
+$mgnBase: 8%;
+
+$headerHeight: 14%;
+
+$colors: (
+  'bk': black,
+  'wh': white,
+  'base': $color-a,
+  'theme-red': #c60613,
+  'light-gray': #e3e3e3,
+);
+
+$lightCol: 80;
+
+$hoverColors: (
+  'bk': black,
+  'wh': white,
+  'base': $color-a + $lightCol,
+  'theme-red': #c60613 + $lightCol,
+  'light-gray': #e3e3e3 + $lightCol,
+);
+
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .col-#{$name} {
+    color: $color;
+  }
+  .hov-col-#{$name} {
+    color: $color;
+  }
+}
+
+
+body {
+  @include getFontSize(22);
+  background-color: #f0f0f0;
+}
+
+.ib-range {
+  > * {
+    @include getFontSize(24);
+  }
+}
+
 
 /* --------------------
   javascript settings
 -------------------- */
-a.disable {
-  opacity: .6;
-}
 
-.js-tglTgt {
-  display: none;
-}
-
-.btn-totop {
-  width: 8%;
-}
 
 
 /* --------------------

@@ -16,22 +16,42 @@
 // @import "wp/wp_parts_pc";
 // @import "wp/wp_cf7_pc";
 
+$mgnBase: 40px;
+
+$colors: (
+  'base': $color-a,
+  'theme-red': #c60613,
+);
+
+$lightCol: 80;
+
+$hoverColors: (
+  'base': $color-a + $lightCol,
+  'theme-red': map-get($colors, 'theme-red') + $lightCol,
+);
+
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .col-#{$name} {
+    color: $color;
+  }
+  .hov-col-#{$name} {
+    color: $color;
+    &:hover:not(.disable) {
+      color: map-get($hoverColors, #{$name});
+      // transition: color $hoverTransition linear 0s;
+      transition: all $hoverTransition linear 0s;
+    }
+  }
+}
+
 
 /* --------------------
   javascript settings
 -------------------- */
-a.disable {
-  cursor: default;
-  opacity: .6;
-  &:hover {
-    opacity: .6;
-    animation: none;
-  }
-}
-
-.js-tglTgt {
-  display: none;
-}
 
 
 /* --------------------

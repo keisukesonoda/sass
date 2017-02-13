@@ -64,7 +64,7 @@
   // display: block;
   &:not(.disable):hover {
     opacity: .7;
-    transition: opacity .2s linear 0s;
+    transition: opacity $hoverTransition linear 0s;
     // animation: backToOpac1 1s linear 0s;
   }
 }

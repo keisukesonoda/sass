@@ -46,7 +46,8 @@ google font
 */
 @import url('https://fonts.googleapis.com/css?family=Muli');
 $Muli: 'Muli', sans-serif;
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$montserrat: 'Montserrat', sans-serif;
 
 /*
 参考
@@ -108,5 +109,5 @@ $minchoFont: 'ヒラギノ明朝 Pro W3', "Hiragino Mincho ProN", "Hiragino Minc
 
 $helvetica: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
-$basic: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', MyYuGothicM, YuGothic, Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+$basic: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, MyYuGothicM, YuGothic, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 
