@@ -4,7 +4,7 @@
 
 ・package-json
 
-```
+``` json
 {
   "name": "sass-template",
   "version": "1.0.0",
@@ -29,7 +29,7 @@
 
 ・gulpfile.js
 
-```
+``` javascript
 const gulp = require('gulp');
 const browser = require('browser-sync');
 
@@ -89,7 +89,7 @@ gulp.task('default', ['server', 'watch']);
 
 
 ・app/index.html
-```
+``` html
 <!DOCTYPE html>
 <html lang="en">
 <head>
