@@ -117,3 +117,8 @@ $colors: (
 }
 
 
+/* form common
+-------------------- */
+:focus::placeholder {
+  color: transparent !important;
+}

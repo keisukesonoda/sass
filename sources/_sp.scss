@@ -93,12 +93,202 @@ body {
 
 /* btns
 -------------------- */
-
-
+.btn-img {
+  @extend .ti;
+  $btns: (
+    'h-circle': (
+      'background-image': url(images/_sp/btns_menu.png),
+      'background-size': 200%,
+      'padding-top': 100%,
+    ),
+    'menu': (
+      'background-position': left top,
+    ),
+    'search': (
+      'background-position': 100% top,
+    ),
+    'beginner': (
+      'background-image': url(images/_sp/btn_beginner.png),
+      'padding-top': percentage(85/189),
+    ),
+    'totop': (
+      'padding-top': percentage(83/94),
+    ),
+  );
+  @each $name, $props in $btns {
+    &.#{$name} {
+      @each $prop, $val in $props {
+        #{$prop}: #{$val};
+      }
+    }
+  }
+}
 
 /* arrows
 -------------------- */
+.arr {
+  position: relative;
+  &:before, &:after {
+    @extend .ti;
+    @include wh(100%, 0);
+    display: inline-block;
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+  &.ar-bf:before {
+    content: "";
+  }
+  &.ar-af:after {
+    content: "";
+  }
 
+  // 各矢印のオリジナルサイズ
+  // 表示サイズの調整は使用する各箇所で行う
+  // $sizes: (
+  //   'base-bk': (
+  //     width: 40px,
+  //     height: 32px,
+  //   ),
+  //   'menu-wh': (
+  //     width: 10px,
+  //     height: 18px,
+  //   ),
+  //   'menu-bk': (
+  //     width: 11px,
+  //     height: 18px,
+  //   ),
+  //   'base-wh': (
+  //     width: 40px,
+  //     height: 32px,
+  //   ),
+  // );
+
+  // 画像の指定
+  // @each $name, $size in $sizes {
+  //   $myWidth:  map-get($size, width);
+  //   $myHeight: map-get($size, height);
+  //   &.ar-#{$name} {
+  //     &:before, &:after {
+  //       padding-top: percentage($myHeight / $myWidth);
+  //       background-image: url(../img/_sp/arr_#{$name}.png);
+  //     }
+  //   }
+  // }
+
+  // テキスト矢印
+  &.ar-txt {
+    $mgn: .5em;
+    vertical-align: middle;
+    &:before, &:after {
+      background: none;
+      width: auto;
+      height: auto;
+      padding-top: 0;
+      display: inline-block;
+      overflow: visible;
+      white-space: normal;
+      text-indent: 0;
+    }
+    // マージン
+    &.ar-bf:before {
+      margin-right: $mgn;
+    }
+    &.ar-af:after {
+      margin-left: $mgn;
+    }
+    // テキストタイプ
+    $types: (
+      'base': '>',
+      'ar': '→',
+    );
+    @each $name, $type in $types {
+      &.type-#{$name} {
+        &.ar-bf:before,
+        &.ar-af:after {
+          content: "#{$type}";
+        }
+      }
+    }
+    // サイズ
+    $sizes: (
+      'lg': 36,
+      'md': 26,
+      // 'sm': ,
+      // 'xs': ,
+    );
+    @each $name, $size in $sizes {
+      &.#{$name} {
+        &:before, &:after {
+          @include getFontSize($size);
+        }
+      }
+    }
+    // 位置
+    &.al-right {
+      &:before,
+      &:after {
+        @extend .pos-vertical-center;
+        height: 1.7em;
+        right: percentage(40/$fwidth);
+        font-weight: normal;
+      }
+    }
+  }
+
+
+  // 矢印の方向
+  $directions: 'right', 'down', 'left', 'up';
+  @each $direction in $directions {
+    $i: index($directions, $direction);
+    $n: $i - 1;
+    $u: 90deg;
+    &.ar-#{$direction} {
+      &:before, &:after {
+        transform: rotate($u * $n);
+      }
+    }
+  }
+}
+
+
+/* icons
+-------------------- */
+.icon {
+  position: relative;
+  &:before, &:after {
+    @extend .ti;
+    @include wh(100%, 0);
+    display: inline-block;
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+  &.ico-bf:before {
+    content: "";
+  }
+  &.ico-af:after {
+    content: "";
+  }
+
+  // 各アイコンのサイズ
+  $sizes: (
+    'thumb-new': (
+      width: 92px,
+      height: 32px,
+    ),
+  );
+
+  // 画像の指定
+  @each $name, $size in $sizes {
+    $myWidth:  map-get($size, width);
+    $myHeight: map-get($size, height);
+    &.ico-#{$name} {
+      &:before, &:after {
+        padding-top: percentage($myHeight / $myWidth);
+        background-image: url(../img/_sp/icon_#{$name}.png);
+      }
+    }
+  }
+}
 
 
 
