@@ -106,7 +106,13 @@
 }
 
 
-
+/* lists
+-------------------- */
+.split-lists {
+  display: flex;
+  flex-wrap: wrap;
+  table-layout: auto;
+}
 
 
 
