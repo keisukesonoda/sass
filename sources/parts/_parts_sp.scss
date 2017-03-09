@@ -73,7 +73,7 @@ $pixels: (
 }
 
 .full-elm {
-  $over: 7.5%;
+  $over: 100% - percentage($mwidth/$fwidth);
   width: 100% + $over;
   margin-left: -( $over / 2);
   padding-left: $over / 2;
