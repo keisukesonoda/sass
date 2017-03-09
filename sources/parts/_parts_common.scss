@@ -99,7 +99,7 @@ $colors: (
 .split-lists {
   @extend .ib-range;
 
-  $width: 100, 49, 30, 23, 19, 15;
+  $width: 100, 47.5, 29.5, 23, 18.5, 15;
   @for $i from 1 through length($width) {
     $mgn: (100% - (nth($width, $i) * $i)) / ($i - 1);
     &.split-#{$i} {
@@ -121,4 +121,15 @@ $colors: (
 -------------------- */
 :focus::placeholder {
   color: transparent !important;
+}
+
+
+
+// custom font awesome
+.fa-hatena {
+  &:before {
+    content: "B!";
+    font-family: Verdana;
+    font-weight: bold;
+  }
 }
