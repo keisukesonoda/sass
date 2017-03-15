@@ -8,12 +8,14 @@ $container: (
   xs: 990px,
 );
 
-$main: 700px;
+$main: map-get($container, md);
 $side: 280px;
+
+$wp-margin-base: 2em;
 
 $hoverTransition: .2s;
 
-
+$font-family-base: $yuGothic;
 $font-size-base: 14px;
 
 $font-size-m1: $font-size-base - 1px;

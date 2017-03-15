@@ -35,9 +35,9 @@
 }
 
 .full-elm {
-  $over: 40px;
-  width: 640px;
-  margin-left: -( $over / 2);
+  $over: 2000px;
+  width: map-get($container, md) + ($over);
+  margin-left: -($over / 2);
   padding-left: $over / 2;
   padding-right: $over / 2;
 }

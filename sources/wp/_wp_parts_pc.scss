@@ -18,8 +18,13 @@ body.mceContentBody {
 
 .editor {
   @extend .clearfix;
-  font-family: $meiryoFont;
+  font-family: $font-family-base;
   font-size: 15px;
+
+  p, ul, div, section, dl, table, form {
+    margin: $wp-margin-base 0;
+  }
+
   .editor-title {
     margin: 3rem 0 1rem;
   }

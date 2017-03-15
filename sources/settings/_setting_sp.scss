@@ -17,10 +17,13 @@ $container: (
   xs: percentage($xwidth / $fwidth),
 );
 
+$wp-margin-base: 2em;
+
 $sp-container: percentage($mwidth / $fwidth);
 $container-pd: ((100% - $sp-container) / 2);
 $inner-pd: percentage(20 / 600);
 
+$font-family-base: $yuGothic;
 $font-size-base: 1.2rem;
 // $font-size-base: @include getFontSize(2.4);
 

@@ -14,9 +14,14 @@
 }
 
 .editor {
-  font-family: $meiryoFont;
+  font-family: $font-family-base;
   margin: 0 auto;
   @extend .clearfix;
+
+  p, ul, div, section, dl, table, form {
+    margin: $wp-margin-base 0;
+  }
+
   .editor-title {
     margin: 3rem 0 1rem;
   }
