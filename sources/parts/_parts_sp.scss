@@ -37,22 +37,37 @@
 }
 
 // general font sizes
-$pixels: (
-  769: 769px,
-  667: 667px,
-  568: 568px,
-  414: 414px,
-  375: 375px,
-  320: 320px
-);
+// $pixels: (
+//   769: 769px,
+//   667: 667px,
+//   568: 568px,
+//   414: 414px,
+//   375: 375px,
+//   320: 320px
+// );
+// $pixels: 769, 667, 568, 414, 375, 320;
+// @each $pixel in $pixels {
+//   @media screen and(max-width: #{$pixel}+px) {
+//     html {
+//       property: $pixel;
+//       font-size: 0.195% * $pixel;
+//     }
+//   }
+// }
 
-@each $key, $pixel in $pixels {
-  @media screen and(max-width: #{$pixel}) {
-    html {
-      font-size: 0.195% * $key;
+$min: 320;
+$max: 780;
+@for $i from $min through $max {
+  @media screen and(min-width: #{$i}+px) {
+    @if $i % 10 == 0 {
+      html {
+        font-size: 0.195% * $i;
+      }
     }
   }
 }
+
+
 
 // container sizes
 .container {
